@@ -1,0 +1,763 @@
+Anguler & Java Script
+
+-------------------------------- Quetion For Java Script------------------------------------
+
+
+1. Difference between slice and splice in JavaScript?
+2. What is chaining in JavaScript? Promise chaining?
+3. What is the use of closures in JavaScript?
+4. Rest operator in JavaScript?
+5. ES6 features in JavaScript?
+6. What is the function of currying?
+7. Shallow copy vs deep copy in JavaScript?
+8. How to make JavaScript asynchronous?
+9. What is closure in JavaScript, and how to create it?
+10. What is an IIFE (Immediately Invoked Function Expression) in JavaScript, and what is its use?
+11. Event loop in JavaScript?
+12. Polyfill in JavaScript?
+13. What is the difference between normal functions and closures in JavaScript?
+
+----------------------------Coding Quetion For Java Script------------------------------------
+Coding Quetion For Java Script use this complier https://jsfiddle.net/
+
+Q.filter out object with status is p in javascript
+
+Inpute 
+let arr=[
+{name:'a',status:"f"},
+{name:'b',status:"p"},
+{name:'c',status:"p"},
+{name:'d',status:"f"}
+]
+
+output name b,name c
+
+
+Q.write a java script function find the accournce of the string =84374638246 number of occurence of that in javascript
+
+Q.find the second largest number in array in javascript
+
+Q.check the string palindrom or not in javascript
+
+Q.find out the missing number in the array in javascript
+
+--------------------------------Quetion For anguler------------------------------------
+
+anguler
+
+1. New feature of Angular?
+2. What are decorators in Angular?
+3. Lifecycle hooks in Angular?
+4. What are promises and observables in Angular?
+5. Which module is required for ngFor and ngIf in Angular?
+6. Can we use ngFor and ngIf on a single element in Angular?
+7. What is the use of trackBy in Angular?
+8. What are template and reactive forms?
+9. When do we have to use template and reactive forms in Angular?
+10. What is eager and lazy loading?
+11. Dependency injection in Angular?
+12. What is a router outlet? Can we use multiple? How can we configure that?
+13. What are router links?
+14. How to get the param from the router in Angular?
+15. Difference between forChild and forRoot in routing?
+16. What is a guard in Angular? Have you heard about resolve in Angular?
+17. Directives in Angular?
+18. How to create a custom directive? Write that code.
+19. Use of constructor in Angular?
+20. Difference between constructor and ngOnInit?
+21. What is the use of @Injectable?
+22. Data sharing in Angular between different components?
+23. You have a grandparent, parent, child. How to pass the data from child to grandparent? What is the best approach?
+24. What is the difference between pure pipes vs impure pipes?
+25. Async pipe in Angular?
+26. How do you deal with errors in observables?
+27. What is a resolver in Angular?
+28. Host listener and host binding?
+29. How to pass data between two sibling components?
+30. What is a subscription?
+31. What is view encapsulation?
+32. Difference between observable vs promise?
+33. Different ways to communicate with a component?
+34. What is Ahead of Time (AOT) compilation in Angular, and what are its benefits?
+35. How can you write unit test cases using Jasmine and Karma?
+36. How would you test an Angular service that interacts with an HTTP API?
+37. How do you create and use Angular libraries?
+38. What is FormBuilder?
+
+
+--------------------------------Coding Quetion For anguler------------------------------------
+
+
+1. Write code to share data from the parent to child component in Angular?
+2. How do you need to implement lazy loading in an Angular application? How would you do this?
+3. You have a component that needs to communicate with the parent component. What is the best way to communicate?
+4. How can you handle validation in Angular? What is dynamic validation?
+5. Write a program for two-way data binding in Angular?
+
+---------------------------------------------------------------------------------------------
+Sure, I'd be happy to answer your JavaScript questions:
+
+1. Difference between slice and splice:
+- `slice`: It is an array method used to create a new array by extracting elements from an existing array. It takes two arguments, the start index (inclusive) and the end index (exclusive), and returns a new array containing elements from the original array within the specified range.
+- `splice`: It is also an array method used to modify an array by adding or removing elements. It takes three or more arguments, the start index, the number of elements to remove, and optional elements to add. It modifies the original array and returns an array containing the removed elements.
+
+2. What is chaining in JavaScript? Promise chaining:
+- Chaining in JavaScript refers to the practice of calling multiple methods on an object one after the other, where each method returns an object that has more methods to call.
+- Promise chaining is a specific type of chaining used with Promises in JavaScript. Promises are objects representing the eventual completion or failure of an asynchronous operation. Promise chaining allows you to chain `then()` and `catch()` methods to handle the resolved value or catch any errors in a more readable and sequential manner.
+
+3. What is the use of closures in JavaScript?
+- Closures in JavaScript are functions that have access to variables from their outer (enclosing) function's scope, even after the outer function has finished executing. Closures are used to create private variables and encapsulation, enabling data hiding and reducing global namespace pollution. They are essential for various design patterns and are widely used in JavaScript to achieve functional programming concepts.
+
+4. Rest operator in JavaScript:
+- The rest operator is denoted by three dots `...` and is used to collect multiple function arguments into a single array. It allows functions to accept a variable number of arguments. The rest operator is helpful when you don't know how many arguments will be passed to a function or when you want to work with an indefinite number of arguments as an array.
+
+5. ES6 features in JavaScript:
+- ES6 (ECMAScript 2015) introduced several new features and enhancements to JavaScript, including:
+  - Arrow functions
+  - Classes
+  - Template literals
+  - Destructuring assignment
+  - Spread operator
+  - Let and const variables
+  - Promises
+  - Modules (import/export)
+  - Default parameters
+  - Rest parameters (covered in the previous question)
+  - And more!
+
+6. What is the function of currying?
+- Currying is a functional programming concept where a function with multiple arguments is transformed into a series of functions, each taking a single argument. It allows you to partially apply a function, fixing some arguments and returning a new function that takes the remaining arguments. Currying is useful for creating reusable functions and promoting code reusability.
+
+7. Shallow copy vs deep copy:
+- Shallow copy: Creating a shallow copy of an object or array means copying the top-level structure only, not the nested elements. In other words, the new object or array points to the same elements as the original. Modifying the nested elements in the shallow copy will affect the original, and vice versa.
+- Deep copy: Creating a deep copy of an object or array means copying the entire structure, including all nested elements. The new object or array is completely independent of the original. Modifying the elements in the deep copy will not affect the original, and vice versa.
+
+8. How to make JavaScript asynchronous?
+- JavaScript can be made asynchronous using techniques like:
+  - Callbacks: Passing functions as arguments to be executed later, commonly used in older versions of JavaScript.
+  - Promises: Representing the eventual completion or failure of an asynchronous operation, allowing chaining of async operations.
+  - Async/Await: Introduced in ES2017, it provides a more synchronous-like syntax for handling asynchronous operations using promises.
+
+9. What is a closure in JavaScript, and how to create it?
+- I have already answered this question in question 3. To create a closure, you define a function inside another function, and the inner function retains access to the variables of the outer function even after the outer function has finished executing.
+
+10. What is IIFE (Immediately Invoked Function Expression) in JavaScript, and what is its use?
+- IIFE is a JavaScript design pattern where you define and invoke a function immediately after its declaration. The syntax for IIFE is `(function() { /* function code */ })();`. It helps create a private scope for your code, preventing variable and function name collisions with other scripts. It is commonly used to avoid polluting the global namespace and is widely used in old JavaScript code or code that doesn't use modules.
+
+11. Event loop in JavaScript:
+- The event loop is a crucial part of JavaScript's concurrency model. It enables JavaScript to handle asynchronous operations, such as timers, network requests, and user input, without blocking the main execution thread. The event loop continuously checks the message queue for pending events, and when the call stack is empty, it picks the first message and executes the corresponding callback. This process allows JavaScript to maintain responsiveness and handle concurrent tasks efficiently.
+
+12. Polyfill in JavaScript:
+- A polyfill is a piece of code (usually JavaScript) that provides modern functionality on older browsers that do not support that functionality natively. It "fills in" the gaps, allowing developers to use newer features while maintaining compatibility with older environments. Polyfills are essential for making use of the latest language features and APIs across various browsers.
+
+13. What is the difference between normal functions and closures in JavaScript?
+- A normal function is a standalone function that does not capture or remember the surrounding state (variables) where it is defined. It operates purely based on its input arguments and external variables.
+- A closure, on the other hand, is a special type of function that "closes over" its surrounding state, meaning it captures and retains access to variables from its containing function even after the containing function has finished executing. This allows closures to access and modify those variables, even though they are no longer in scope.
+
+
+
+-----------------------------------------------------------------------------------------------
+
+Sure, I can provide you with JavaScript code solutions for each of the given questions:
+
+1. Filter out objects with status "p" in JavaScript:
+
+```javascript
+let arr = [
+  { name: 'a', status: "f" },
+  { name: 'b', status: "p" },
+  { name: 'c', status: "p" },
+  { name: 'd', status: "f" }
+];
+
+let filteredArr = arr.filter(obj => obj.status === "p");
+let output = filteredArr.map(obj => obj.name);
+
+console.log(output); // Output: [ 'b', 'c' ]
+```
+
+2. JavaScript function to find the number of occurrences of a string in a given string:
+
+```javascript
+function countOccurrences(mainString, subString) {
+  const regex = new RegExp(subString, 'g');
+  const matches = mainString.match(regex);
+  return matches ? matches.length : 0;
+}
+
+let mainString = "8437463824684374638246";
+let subString = "84374638246";
+let occurrences = countOccurrences(mainString, subString);
+
+console.log(occurrences); // Output: 3
+```
+
+3. Find the second largest number in an array in JavaScript:
+
+```javascript
+function findSecondLargest(arr) {
+  if (arr.length < 2) {
+    return "Array should have at least two elements";
+  }
+
+  arr.sort((a, b) => b - a);
+  return arr[1];
+}
+
+let numbers = [12, 34, 54, 67, 23, 9, 78, 45];
+let secondLargest = findSecondLargest(numbers);
+
+console.log(secondLargest); // Output: 67
+```
+
+4. Check if a string is a palindrome or not in JavaScript:
+
+```javascript
+function isPalindrome(str) {
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+}
+
+let inputStr = "radar";
+let isPalindrom = isPalindrome(inputStr);
+
+console.log(isPalindrom); // Output: true
+```
+
+5. Find out the missing number in an array in JavaScript:
+
+```javascript
+function findMissingNumber(arr) {
+  const n = arr.length + 1;
+  const totalSum = (n * (n + 1)) / 2;
+  const arrSum = arr.reduce((sum, num) => sum + num, 0);
+  return totalSum - arrSum;
+}
+
+let numbersArray = [1, 2, 4, 5, 6];
+let missingNumber = findMissingNumber(numbersArray);
+
+console.log(missingNumber); // Output: 3
+```
+
+-----------------------------------------------------------------------------------------------
+
+Sure, I can answer the Angular questions one by one:
+
+1. New features of Angular:
+Angular frequently releases new features and enhancements. As of my knowledge cutoff in September 2021, some notable new features in Angular include:
+- Angular Ivy: The new default rendering engine that improves performance and reduces bundle sizes.
+- Angular CLI: Command-line interface for Angular projects, providing various development and build tools.
+- Differential Loading: Generating separate bundles for modern and legacy browsers to improve performance.
+- Strict Mode: Enabling stricter type-checking and improved performance for Angular applications.
+- Angular Elements: Enabling the creation of custom elements (web components) from Angular components.
+
+2. Decorators in Angular:
+Decorators are a feature in TypeScript, which Angular leverages to enhance and extend the behavior of classes, methods, and properties. In Angular, decorators are used for various purposes, such as defining components, services, modules, routing, and more. Examples of Angular decorators include `@Component`, `@Injectable`, `@NgModule`, `@Input`, `@Output`, `@HostListener`, etc.
+
+3. Lifecycle hooks in Angular:
+Angular provides various lifecycle hooks that allow you to execute specific code at different stages of a component's life. Some commonly used lifecycle hooks are `ngOnInit`, `ngOnChanges`, `ngAfterViewInit`, `ngOnDestroy`, etc. These hooks help manage component initialization, change detection, and resource cleanup.
+
+4. Promises and Observables in Angular:
+- Promises: Promises are a way to handle asynchronous operations in Angular. They represent a single value that may be available now or in the future. Promises are limited to handling a single value and are not cancellable.
+- Observables: Observables are a more powerful way to work with asynchronous data streams in Angular. They can handle multiple values over time, are cancellable, and provide various operators to transform, merge, and handle data streams efficiently.
+
+5. Modules required for ngFor and ngIf:
+Both `ngFor` and `ngIf` directives are part of the CommonModule, so you need to import the `CommonModule` to use them. Additionally, if you're using `ngIf`, you need to import `BrowserModule` as well.
+
+6. Using ngFor and ngIf on a single element in Angular:
+Yes, you can use both `ngFor` and `ngIf` on a single element. For example:
+
+```html
+<div *ngFor="let item of items" *ngIf="item.show">{{ item.name }}</div>
+```
+
+However, this syntax will result in an error as you cannot have multiple structural directives on a single element. Instead, you can use `ng-container` as a wrapper for multiple directives:
+
+```html
+<ng-container *ngFor="let item of items">
+  <div *ngIf="item.show">{{ item.name }}</div>
+</ng-container>
+```
+
+7. Usage of trackBy in Angular:
+The `trackBy` option is used with `ngFor` to improve performance when rendering a list of items. By providing a trackBy function, Angular can identify which items have changed and only update those, instead of re-rendering the entire list. This can significantly boost rendering performance, especially when working with large lists.
+
+```html
+<div *ngFor="let item of items; trackBy: trackByFn">{{ item.name }}</div>
+```
+
+```typescript
+trackByFn(index: number, item: any): number {
+  return item.id; // Assuming 'id' is a unique identifier for each item
+}
+```
+
+8. Template and Reactive Forms in Angular:
+- Template-Driven Forms: Template forms are a simpler approach to form handling, relying on Angular's form directives and form elements in the template. They are suitable for simpler forms with less complex validation requirements.
+- Reactive Forms: Reactive forms are a more powerful approach that uses explicit form control objects to manage the form state and validation. Reactive forms are recommended for complex forms that require dynamic form control manipulation and advanced validation logic.
+
+9. When to use Template and Reactive Forms in Angular:
+Use Template-Driven Forms for simpler forms with basic validation requirements and when the form structure is closely tied to the template. Use Reactive Forms for more complex forms with dynamic controls, advanced validation, and when you need full control over the form state in the component code.
+
+10. Eager and Lazy Loading in Angular:
+- Eager Loading: In eager loading, all the necessary modules and components are loaded when the application starts. This means that all required modules and components are bundled together in the main bundle and are loaded upfront.
+- Lazy Loading: In lazy loading, modules and components are loaded on-demand as the user navigates to specific routes. This can significantly reduce the initial load time of the application, as only the necessary modules are loaded when needed.
+
+11. Dependency Injection in Angular:
+Dependency Injection (DI) is a core concept in Angular, where the required dependencies of a class (services, other classes, etc.) are provided and managed by the Angular Injector. DI allows for loose coupling between classes, making the application more modular, testable, and easier to maintain.
+
+12. What is a Router Outlet? Can we use multiple? How can we configure that?
+A Router Outlet is a placeholder in the template where Angular dynamically renders the component associated with a specific route. Yes, you can use multiple Router Outlets in an application. To use multiple Router Outlets, you need to name them using the `name` attribute, and then in your routing configuration, you can specify which outlet to use for a particular route using the `outlet` property.
+
+```html
+<router-outlet></router-outlet> <!-- Default Router Outlet -->
+<router-outlet name="popup"></router-outlet> <!-- Named Router Outlet -->
+```
+
+```typescript
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'popup', component: PopupComponent, outlet: 'popup' },
+];
+```
+
+13. What are Router Links?
+Router Links are a directive in Angular used for navigating to different routes within the application. They provide a declarative way to create links and handle navigation without the need to write navigation logic in the component code.
+
+```html
+<!-- Example of Router Link -->
+<a routerLink="/home">Home</a>
+```
+
+14. How to get the params from the router in Angular?
+You can access the route parameters using the `ActivatedRoute` service. The `params` property of `ActivatedRoute` provides an observable that emits the route parameters whenever they change.
+
+```typescript
+import { ActivatedRoute } from '@angular/router';
+
+constructor(private route: ActivatedRoute) { }
+
+ngOnInit() {
+  this.route.params.subscribe(params => {
+    const id = params['id']; // Assuming 'id' is the parameter name in the route
+    // Use the 'id' parameter as needed
+  });
+}
+```
+
+15. Difference between forChild and forRoot in routing?
+- `forRoot`: It is used when setting up the routing in the root module (usually the `AppModule`). It provides the routing configuration and registers the router service globally, making it available throughout the application.
+- `forChild`: It is used for setting up additional child routes in feature modules. It doesn't provide the router service globally but extends the existing routing configuration from the `forRoot` in the root module.
+
+16. What are Guards in Angular? Have you heard about Resolvers in Angular?
+- Guards: Guards
+
+ are used to control the navigation and access to routes in Angular. They allow you to enforce conditions before activating a route. Examples of guards are `CanActivate`, `CanDeactivate`, `CanLoad`, and `CanActivateChild`.
+- Resolvers: Resolvers are a type of Angular Guard that help fetch data before the route is activated. They are useful when you need to load data from a backend or perform some initialization before the route is rendered.
+
+17. Directives in Angular:
+Directives are a way to extend the behavior of HTML elements or components. Angular has three types of directives:
+- Component Directives: Used to create reusable UI components with their own view and logic.
+- Attribute Directives: Change the appearance or behavior of an element, e.g., `ngClass`, `ngStyle`.
+- Structural Directives: Manipulate the DOM layout by adding or removing elements, e.g., `ngIf`, `ngFor`.
+
+18. How to create a custom directive in Angular? (Example code):
+To create a custom directive, you can use the `@Directive` decorator. Here's an example of a custom directive that changes the background color of an element:
+
+```typescript
+import { Directive, ElementRef, Renderer2 } from '@angular/core';
+
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+  constructor(private elementRef: ElementRef, private renderer: Renderer2) {
+    this.renderer.setStyle(this.elementRef.nativeElement, 'background-color', 'yellow');
+  }
+}
+```
+
+19. Use of constructor in Angular:
+The constructor is a special method in a class that gets called when an instance of the class is created. In Angular components and services, the constructor is often used for dependency injection, where the required services are injected into the component or service.
+
+20. Difference between constructor and ngOnInit:
+- Constructor: The constructor is a method that gets called when an instance of the class is created. It is part of the class and runs before Angular initializes the component or directive.
+- ngOnInit: `ngOnInit` is a lifecycle hook specific to Angular components. It is called after the component has initialized and the data-bound properties have been initialized.
+
+21. What is the use of @Injectable?
+`@Injectable` is a decorator in Angular that is used to indicate that a class is eligible for dependency injection. It is typically used with services to allow Angular to provide instances of the service to the components that request it.
+
+22. Data sharing in Angular between different components:
+There are multiple ways to share data between components in Angular, including:
+- Parent-to-child communication using `@Input` and `@Output`.
+- Using a shared service with dependency injection.
+- Using `@ViewChild` to access child components from the parent.
+
+23. How to pass data from a child component to a grandparent component in Angular?
+To pass data from a child component to a grandparent component, you can use a shared service or emit events using `@Output` and `EventEmitter`. The child component emits the data, and the parent component receives it and can then pass it to the grandparent component.
+
+24. Difference between pure pipe vs impure pipe:
+- Pure Pipe: A pure pipe is stateless and only reevaluates when its input values change. It does not depend on global state or mutable data.
+- Impure Pipe: An impure pipe is stateful and can reevaluate on every change detection cycle, even if its input values have not changed. It may depend on mutable data or global state.
+
+25. Async Pipe in Angular:
+The Async Pipe is a built-in Angular pipe used to subscribe to an Observable or a Promise and automatically handle the subscription and unsubscription. It simplifies working with asynchronous data streams in the template and automatically updates the template when the asynchronous data changes.
+
+26. How do you deal with errors in Observables?
+You can handle errors in Observables using the `catchError` operator or the `subscribe` method's error callback. The `catchError` operator allows you to handle errors within the Observable chain, while the `subscribe` error callback handles errors when subscribing.
+
+27. What is a Resolver in Angular?
+A Resolver is a type of Angular Guard that helps fetch data before the route is activated. It is useful when you need to load data from a backend or perform some initialization before the route is rendered.
+
+28. Host Listener and Host Binding:
+- Host Listener: `@HostListener` is a decorator in Angular used to add event listeners to the host element (the element to which the directive is applied). It allows you to listen for events and execute custom behavior in response to those events.
+- Host Binding: `@HostBinding` is a decorator used to bind a directive's property to a property of the host element. It allows you to set the property of the host element based on the value of a directive's property.
+
+29. How to pass data between two sibling components in Angular?
+To pass data between sibling components, you can use a shared service with dependency injection. The data can be shared between the components through the service, allowing them to communicate with each other indirectly.
+
+30. What is a Subscription in Angular?
+A Subscription is an object that represents a disposable resource, usually the execution of an Observable. It is used to handle the subscriptions and unsubscribe from the Observable when it is no longer needed. This prevents memory leaks and unnecessary processing.
+
+31. View Encapsulation in Angular:
+View Encapsulation is a mechanism in Angular that encapsulates the styles of a component to prevent them from affecting other components. The default encapsulation mode is `Emulated`, which uses shadow DOM or CSS scoping to isolate component styles.
+
+32. Different ways to communicate with components:
+- Parent-to-child communication using `@Input` and `@Output`.
+- Using a shared service with dependency injection.
+- Using `@ViewChild` to access child components from the parent.
+- Using Angular's `EventEmitter`.
+- Using route parameters and query parameters.
+
+33. Ahead of Time (AOT) Compilation in Angular and its benefits:
+AOT (Ahead of Time) Compilation is a process that compiles Angular templates and components during the build phase of the application. It converts the templates into JavaScript code and generates optimized code that is smaller in size and can be executed more efficiently by the browser. AOT compilation provides faster load times and improved application performance.
+
+34. How to write unit test cases using Jasmine and Karma?
+To write unit test cases in Angular, you can use Jasmine as the testing framework and Karma as the test runner. You write test suites, test specs, and expectations using Jasmine's API and run the tests with Karma. Angular CLI provides support for generating and running unit tests out of the box.
+
+35. How would you test an Angular service that interacts with an HTTP API?
+To test an Angular service that interacts with an HTTP API, you can use the `HttpClientTestingModule` provided by Angular's testing utilities. This module allows you to mock the HTTP requests and responses, enabling you to test the service's behavior without making actual HTTP calls.
+
+36. How do you create and use Angular libraries?
+To create an Angular library, you can use the Angular CLI to generate a new library project. After creating the library, you can build it using the `ng build` command, and then publish it to npm using the `npm publish` command. Once published, you can install the library in other Angular projects and use its components, services, and directives as needed.
+
+37. What is FormBuilder in Angular?
+`FormBuilder` is a service
+
+ provided by Angular's `@angular/forms` module. It simplifies the creation of complex forms in Angular reactive forms approach. It provides convenient methods for defining form controls, groups, and arrays, making it easier to manage and validate form data.
+
+38. How to create a live search feature using Angular component and service?
+To create a live search feature using Angular, you can follow these steps:
+1. Create a search input in your component's template.
+2. Bind the input value to a component property using `[(ngModel)]`.
+3. Use a `Subject` from `rxjs` in your service to receive search query updates.
+4. Subscribe to the `Subject` in your service to perform the search operation.
+5. Display the search results in your component's template.
+
+Here's an example code:
+
+Component:
+```html
+<input [(ngModel)]="searchQuery" (keyup)="onSearch()" placeholder="Search...">
+<ul>
+  <li *ngFor="let result of searchResults">{{ result }}</li>
+</ul>
+```
+
+```typescript
+import { Component } from '@angular/core';
+import { SearchService } from './search.service';
+
+@Component({
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
+})
+export class SearchComponent {
+  searchQuery: string = '';
+  searchResults: string[] = [];
+
+  constructor(private searchService: SearchService) { }
+
+  onSearch() {
+    this.searchService.search(this.searchQuery).subscribe(results => {
+      this.searchResults = results;
+    });
+  }
+}
+```
+
+Service:
+```typescript
+import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class SearchService {
+  private searchQuerySubject = new Subject<string>();
+
+  search(searchQuery: string) {
+    this.searchQuerySubject.next(searchQuery);
+    // Perform the actual search operation here and return the results as an Observable
+    // For simplicity, we'll just return mock results here.
+    const mockResults = ['Result 1', 'Result 2', 'Result 3'];
+    return of(mockResults);
+  }
+}
+```
+
+39. Describe a scenario where you used Angular component inheritance in a real project?
+Inheritance of components in Angular is not a common practice, as Angular promotes composition over inheritance. However, there might be scenarios where a set of components share common behavior or functionality. In such cases, you can create a base component with the shared logic and then extend it to create specialized child components.
+
+For example, suppose you have a set of UI components that require common styling, event handling, or input validation. Instead of duplicating the code in each component, you can create a base component with the shared logic and extend it to create the specialized components.
+
+40. Describe a scenario where you implemented authentication and authorization in an Angular application?
+Implementing authentication and authorization in an Angular application is essential to control access to certain parts of the application based on user roles and permissions.
+
+For example, you might have an application with different user roles, such as admin, manager, and regular user. Each role should have access to specific routes and functionalities.
+
+To implement this, you can use a combination of Angular guards, a shared authentication service, and server-side authentication mechanisms like JWT (JSON Web Tokens).
+
+- Create an authentication service that handles login, logout, token storage, and user information.
+- Implement an HTTP interceptor to attach the JWT token to outgoing requests.
+- Use Angular guards (such as `CanActivate`, `CanActivateChild`, etc.) to restrict access to certain routes based on user roles or permissions.
+- Implement a server-side authentication mechanism (e.g., JWT) to verify the user's identity and roles on the backend.
+
+41. How do you protect routes in Angular based on user roles and permissions?
+You can protect routes in Angular based on user roles and permissions using the `CanActivate` guard. The `CanActivate` guard allows you to check the user's role and decide whether to activate or block access to a particular route.
+
+Here's an example of how to protect a route based on user roles:
+
+```typescript
+// auth.guard.ts
+import { Injectable } from '@angular/core';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
+import { AuthService } from './auth.service';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthGuard implements CanActivate {
+  constructor(private authService: AuthService, private router: Router) { }
+
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
+    // Check if the user is authenticated and has the required role
+    if (this.authService.isAuthenticated() && this.authService.hasRole('admin')) {
+      return true;
+    } else {
+      // Redirect to the login page or show an access denied message
+      this.router.navigate(['/login']);
+      return false;
+    }
+  }
+}
+```
+
+```typescript
+// app-routing.module.ts
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './auth.guard';
+
+const routes: Routes = [
+  // ...
+  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
+  // ...
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+
+In this example, the `AuthGuard` checks if the user is authenticated and has the required role (`admin`). If the user meets the criteria, they can access the `/admin` route. Otherwise, they are redirected to the login page or shown an access denied message.
+
+42. How have you integrated third-party libraries?
+Integrating third-party libraries in an Angular application can be done in several ways, depending on the library and the preferred approach:
+
+- Install the library using npm: Use the `npm install` command to install the library, and then import and use it in your Angular components or services.
+
+- Include the library via CDN: If the library provides a CDN link, you can include it directly in the `index.html` file and use it in your application.
+
+- Use Angular Schematics: Some libraries offer Angular Schematics to automate the integration process. You can use schematics to add the library and configure it according to your needs.
+
+- Create a wrapper component or service: If a third-party library is not directly compatible with Angular's change detection and lifecycle, you can create a wrapper component or service to encapsulate the library's functionality and make it more Angular-friendly.
+
+The integration approach depends on the library's nature and the level of customization you require in your application.
+
+-------------------------------------------------------------------------------------------------------------
+
+Sure, I can provide code examples for the given Angular questions:
+
+1. Code to share data from the parent to child component:
+
+Parent Component:
+```html
+<app-child [dataFromParent]="parentData"></app-child>
+```
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html'
+})
+export class ParentComponent {
+  parentData = 'Data from Parent';
+}
+```
+
+Child Component:
+```typescript
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html'
+})
+export class ChildComponent {
+  @Input() dataFromParent: string;
+}
+```
+
+2. Implementing Lazy Loading in an Angular application:
+
+To implement lazy loading in Angular, you need to create a separate module for the feature or section of the application that you want to load lazily. Follow these steps:
+
+Step 1: Create a feature module (e.g., `feature.module.ts`) for the lazy-loaded component(s) and routes.
+
+```typescript
+// feature.module.ts
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { FeatureComponent } from './feature.component';
+
+const routes: Routes = [
+  { path: '', component: FeatureComponent }
+];
+
+@NgModule({
+  declarations: [FeatureComponent],
+  imports: [RouterModule.forChild(routes)]
+})
+export class FeatureModule { }
+```
+
+Step 2: Define the route in the root `app-routing.module.ts` using `loadChildren`.
+
+```typescript
+// app-routing.module.ts
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'lazy', loadChildren: () => import('./feature/feature.module').then(m => m.FeatureModule) },
+  // Other routes
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+
+3. Best way for a component to communicate with the parent component:
+
+The best way for a child component to communicate with its parent component is by using `@Output()` and `EventEmitter`. The child component emits an event, and the parent component listens for that event using the event binding.
+
+Child Component:
+```typescript
+import { Component, Output, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html'
+})
+export class ChildComponent {
+  @Output() dataToParent = new EventEmitter<string>();
+
+  sendDataToParent() {
+    this.dataToParent.emit('Data from Child');
+  }
+}
+```
+
+Parent Component:
+```html
+<app-child (dataToParent)="receiveDataFromChild($event)"></app-child>
+<p>Data from Child: {{ receivedData }}</p>
+```
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html'
+})
+export class ParentComponent {
+  receivedData: string;
+
+  receiveDataFromChild(data: string) {
+    this.receivedData = data;
+  }
+}
+```
+
+4. Handling validation in Angular and dynamic validation:
+
+In Angular, you can handle form validation using both template-driven forms and reactive forms.
+
+Template-driven forms:
+```html
+<form #myForm="ngForm">
+  <input type="text" name="name" [(ngModel)]="name" required>
+  <div *ngIf="myForm.controls.name.touched && myForm.controls.name.errors?.required">
+    Name is required.
+  </div>
+</form>
+```
+
+Reactive forms:
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+@Component({
+  selector: 'app-my-form',
+  templateUrl: './my-form.component.html'
+})
+export class MyFormComponent implements OnInit {
+  myForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
+
+  ngOnInit() {
+    this.myForm = this.formBuilder.group({
+      name: ['', Validators.required]
+    });
+  }
+}
+```
+
+Dynamic validation allows you to set and change validation rules at runtime based on certain conditions.
+
+5. Program for two-way data binding:
+
+Two-way data binding in Angular can be achieved using the `ngModel` directive. Here's an example:
+
+```html
+<input type="text" [(ngModel)]="data">
+<p>You entered: {{ data }}</p>
+```
+
+In this example, the `data` variable in the component is bound to the input field using `[(ngModel)]`. Any changes in the input field will be immediately reflected in the `data` variable, and vice versa.
+
+Note: For two-way data binding to work, make sure to import the `FormsModule` in the parent module where the component resides. For reactive forms, import the `ReactiveFormsModule`.

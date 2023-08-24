@@ -1,0 +1,61 @@
+
+Interview questions  for Java:
+
+1. What is abstraction and encapsulation in Java?
+
+2. What is the use of an abstract class and interface, and in which scenarios would you choose each?
+
+3. What is an exception, and what is the difference between "throw" and "throws"?
+
+4. What is serialization?
+
+5. What is the difference between ArrayList and LinkedList?
+
+6. What is the difference between SerializeHashMap and ConcurrentHashMap?
+
+7. Explain the internal working of HashMap.
+
+8. What is fail-safe and fail-fast in Java?
+
+9. If we have two employee objects and we put them in a map as keys, what will happen, and why?
+
+10. What is the contract between the hashCode and equals methods?
+
+Java 8 questions 
+1. Java 8: What is a functional interface and what are the types of core interfaces?
+
+2. Java 8 features and their explanations.
+
+java 8 coding questions 
+
+1.original array is {128, 0, 99, 67, 50, 0, 29, 7, 0}
+
+output 128 99 67 50 29 7 0 0 0
+
+2.https://onecompiler.com/java/3zfnj2r6x
+
+3.https://onecompiler.com/java/3zd5wmyqc
+
+
+Spring boot  questions 
+1. What is autowire?
+
+2. How do you handle exceptions and validation in your project? For example, if you are fetching data and that data is not found in the database, how do you handle this situation?
+
+3. What is Actuator?
+
+4. How do you handle security in your project?
+
+5. How can you replace a server?
+
+6. If we use the @Services annotation over the Repository layer, what will happen?
+
+Hibernate questions 
+1. Difference between Save and Persistent methods.
+
+2. What is a session and session factory?
+
+3. What is first level and second level cache?
+
+4. Difference between JPA and Hibernate.
+
