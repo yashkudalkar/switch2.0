@@ -1,9 +1,10 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSumArray {// TC: O(n), SC: O(n)
 
-    public int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {
         int [] ans = new int[2];
         Map<Integer,Integer> map = new HashMap<>();
 
@@ -17,5 +18,12 @@ public class TwoSumArray {// TC: O(n), SC: O(n)
             }
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        int [] input = {3, 5, 7, 6, 10};
+        int target = 12;
+        Arrays.stream(twoSum(input, 12)).forEach(System.out::println);
+
     }
 }
